@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="cs/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Bank Account</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to Epicodus Credit Union</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <hr>
-          <form id="new-account">
-            <h2>Open a bank account with us!</h2>
-            <div class="form-group">
-              <label for="name">First Name</label>
-              <input type="text"  class="form-control" id="name">
-            </div>
-            <div class="form-group">
-              <label for="initial-deposit">Initial Deposit $
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="cs/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Credit Union</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Epicodus Credit Union</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <form id="new-account">
+          <h2>Open a bank account with us!</h2>
+          <div class="form-group">
+            <label for="name">First Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="initial-deposit">Initial Deposit $
               <input type="number" class="form-control" id="initial-deposit"></label>
-            </div>
-            <button type="submit" class="btn-primary">Create new Account!</button>
-          </form>
-          <form id="existing-account">
-            <h2>How may we help you today?</h2>
-            <label for="deposit">Deposit Amount $: </label>
-            <input id="deposit">
-            <br>
-            <label for="withdrawal">Withdrawal Amount $: </label>
-            <input id="withdrawal">
-            <br>
-            <button type="submit">Process</button>
-          </form>
-          <hr>
-        </div>
-        <div id="balance">
-            <label for="current-balance">Current Balance</label>
-            <input type="text" id="current-balance">
-            <br>
-            <h3>Transaction History:</h3>
-            <br>
-            <div id="history"></div>
-        </div>
+          </div>
+          <button type="submit" class="btn-primary">Create new Account!</button>
+        </form>
+        <form id="existing-account">
+          <h2>How may we help you today?</h2>
+          <label for="deposit">Deposit Amount $: </label>
+          <input id="deposit">
+          <br>
+          <label for="withdrawal">Withdrawal Amount $: </label>
+          <input id="withdrawal">
+          <br>
+          <button type="submit">Process</button>
+        </form>
+        <hr>
+      </div>
+      <div id="balance">
+        <label for="current-balance">Current Balance</label>
+        <input type="text" id="current-balance">
+        <br>
+        <h3>Transaction History:</h3>
+        <br>
+        <div id="history"></div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</body>
 
+</html>
